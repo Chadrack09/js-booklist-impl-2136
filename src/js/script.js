@@ -14,3 +14,10 @@ class Book {
     return `This Book: ${this.title} was written by ${this.author}`;
   }
 }
+class Person {
+  constructor (name, surname, age){
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+  }
+}
