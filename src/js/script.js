@@ -8,26 +8,14 @@ class Book {
 
   // Methods that display Book
   static displayBook(){
-    
+    const name = 'John';
+  }
+  getAge() {
+    return `This Book: ${this.title} was written by ${this.author}`;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 const form = document.querySelector('#form');
-
-
 // form.addEventListener('submit', e => {
 //   e.preventDefault();
 //   const title = document.querySelector('#title').value;
