@@ -61,3 +61,22 @@ button {
     background-color: $primary-color;
   }
 }
+
+.btn-delete {
+  margin: 0 auto;
+  margin: 5px auto;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  background-color: #e42b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: .4s;
+  &:hover {
+    cursor: pointer;
+    background-color: #ad2323;
+  }
+}
+

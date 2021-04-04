@@ -47,8 +47,38 @@ label {
 .container {
   position: relative;
   display: grid;
+  grid-template-columns: 1fr;
   width: calc(100% - 100%/12*2);
   margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+}
+.sub-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+.alert-danger {
+  display: flex;
+  width: 100%;
+  color: #fff;
+  background-color: #f52525;
+  border: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  transition: .4s;
+}
+.alert-success {
+  display: flex;
+  width: 100%;
+  color: #fff;
+  background-color: #69a70d;
+  border: none;
+  padding: 1rem;
+  margin: 2rem 0;
+  transition: .4s;
 }
 
 
@@ -66,7 +96,7 @@ label {
   top: 0;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: +1;
 
   .heading {
     font-size: 48px;
