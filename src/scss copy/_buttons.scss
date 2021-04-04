@@ -1,0 +1,82 @@
+%btn {
+  padding: .3rem 1.5rem;
+  display: block;
+  border: none;
+  border-radius: unset;
+  color: #fff;
+  outline: unset;
+  cursor: pointer;
+  transition: .4s;
+  margin: .5rem 0;
+  font-family: 'Zilla Slab';
+  font-weight: 400;
+  font-size: 1rem;
+}
+button {
+  @extend %btn;
+  background-color: $primary-color;
+  &:hover {
+    background-color: darken($primary-color, 10);
+  }
+}
+// input[type="button"], input[type="submit"] {
+//   @extend %btn;
+// }
+.btn-primary {
+  @extend %btn;
+  background-color: $primary-color;
+  &:hover {
+    background-color: darken($primary-color, 10);
+  }
+}
+.btn-primary-block {
+  @extend %btn;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: $primary-color;
+  &:hover {
+    background-color: darken($primary-color, 10);
+  }
+}
+.btn-hollow {
+  @extend %btn;
+  color: $primary-color;
+  background-color: transparent;
+  border: 1px solid $primary-color;
+  &:hover {
+    color: #fff;
+    background-color: $primary-color;
+  }
+}
+.btn-hollow-block {
+  @extend %btn;
+  color: $primary-color;
+  background-color: transparent;
+  border: 1px solid $primary-color;
+  width: 100%;
+  text-align: center;
+  &:hover {
+    color: #fff;
+    background-color: $primary-color;
+  }
+}
+
+.btn-delete {
+  margin: 0 auto;
+  margin: 5px auto;
+  width: 25px;
+  height: 25px;
+  color: #fff; 
+  background-color: #e42b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: .4s;
+  &:hover {
+    cursor: pointer;
+    background-color: #ad2323;
+  }
+}
+
